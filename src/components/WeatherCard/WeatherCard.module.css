@@ -1,0 +1,76 @@
+.card {
+  height: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.date {
+  margin: 0.5rem 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.weatherIcon {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.5rem;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detailLabel {
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+}
